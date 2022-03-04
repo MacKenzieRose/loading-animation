@@ -1,0 +1,133 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* START STYLING PAGE ELEMENTS */
+
+body {
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+header {
+  padding: 2rem;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+div.hero-banner {
+  position: relative;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+div.svg-container {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  margin: 8% auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #eee;
+  width: 100%;
+}
+
+/* END STYLING PAGE ELEMENTS */
+/* START LOADING ANIMATION CODE */
+
+.navbar {
+  z-index: 2000;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+}
+
+.header-img {
+  z-index: -1000;
+  opacity: 0;
+  animation: fade-in 1.8s ease-in-out forwards;
+  animation-iteration-count: 1;
+}
+
+.overlay {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+#outline {
+  animation: draw 1.8s ease-in-out forwards;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+
+#davies {
+  opacity: 0;
+  animation: fade-in .6s ease-in-out forwards;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+}
+
+#group {
+  opacity: 0;
+  animation: fade-in .6s ease-in-out forwards;
+  animation-delay: 4.4s;
+  animation-iteration-count: 1;
+}
+
+/* Define the start, mid, and end keyframes for the air & plumbing & commercial icon animations */
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1200;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+/* END LOADING ANIMATION CODE */
