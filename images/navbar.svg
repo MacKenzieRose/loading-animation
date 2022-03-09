@@ -23,7 +23,7 @@
             <text id="Gallery" font-family="Lato-Medium, Lato" font-size="16" font-weight="400" letter-spacing="1.45454545" fill="#FFFFFF">
                 <tspan x="956" y="59">GALLERY</tspan>
             </text>
-            <rect id="Rectangle" fill="#78C944" x="1295" y="30" width="258" height="41"></rect>
+            <rect id="Rectangle" fill="#83c258" x="1295" y="30" width="258" height="41"></rect>
             <text id="GET-A-FREE-ESTIMATE" font-family="Lato-Black, Lato" font-size="16" font-weight="800" letter-spacing="1.45454545" fill="#000000">
                 <tspan x="1334" y="57">GET A FREE ESTIMATE</tspan>
             </text>
