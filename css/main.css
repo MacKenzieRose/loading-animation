@@ -70,7 +70,7 @@ footer {
   z-index: 2000;
   opacity: 0;
   animation: fade-in 1s ease-in-out forwards;
-  animation-delay: 5s;
+  animation-delay: 7.7s;
   animation-iteration-count: 1;
 }
 
@@ -83,27 +83,27 @@ footer {
 
 .overlay {
   opacity: 0;
-  animation: fade-in 1s ease-in-out forwards;
-  animation-delay: 2s;
+  animation: fade-in-out 7.2s ease-in-out forwards;
+  animation-delay: 1.6s;
   animation-iteration-count: 1;
 }
 
 #outline {
-  animation: draw 1.8s ease-in-out forwards;
+  animation: draw 4.6s ease-in-out forwards;
   animation-delay: 3s;
   animation-iteration-count: 1;
 }
 
 #davies {
   opacity: 0;
-  animation: fade-in .6s ease-in-out forwards;
+  animation: fade-in-logo 3.6s ease-in-out forwards;
   animation-delay: 4s;
   animation-iteration-count: 1;
 }
 
 #group {
   opacity: 0;
-  animation: fade-in .6s ease-in-out forwards;
+  animation: fade-in-logo 3.2s ease-in-out forwards;
   animation-delay: 4.4s;
   animation-iteration-count: 1;
 }
@@ -115,8 +115,18 @@ footer {
     stroke-dashoffset: 1200;
   }
 
+  40% {
+    stroke-dashoffset: 0;
+  }
+
+  80% {
+    stroke-dashoffset: 0;
+    opacity: 1.0;
+  }
+
   100% {
     stroke-dashoffset: 0;
+    opacity: 0;
   }
 }
 
@@ -127,6 +137,42 @@ footer {
 
   100% {
     opacity: 1.0;
+  }
+}
+
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+  
+    25% {
+      opacity: 1.0;
+    }
+
+    70% {
+      opacity: 1.0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes fade-in-logo {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1.0;
+  }
+
+  80% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
